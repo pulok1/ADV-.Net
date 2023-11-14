@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/EmptyLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page|Zero Hunger</title>
+
+</head>
+<body>
+    <header>
+        <nav class="d-flex justify-content-around align-center mt-3">
+            <div>
+                <a href="/"><h1 class="bg-primary text-white rounded p-2">Home</h1></a>
+            </div>
+            <div>
+                <ul class="d-flex">
+                    <div class="m-2">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Connect With Us
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Connect With Us</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Do you want to be a Volunteer or do you belong to a Restaurant?
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="/Signup/VolunteerSignUp" class="btn btn-dark">Volunteer Sign Up</a>
+                                        <a href="/Signup/RestaurentSignUp" class="btn btn-dark">Restaurant Sign Up</a>
+                                        <a href="/LogIn/VolunteerLogIn" class="btn btn-dark">Volunteer Log In</a>
+                                        <a href="/LogIn/RestaurantLogIn" class="btn btn-dark">Resturant Log In</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                        
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="d-flex justify-content-center">
+                <div class="m-5">
+                    <h1>Sharing is</h1>
+                    <h2>Said to be Caring</h2>
+                    <p>Contribute to the community.</p>
+                    <a href="/LogIn/NgoLogIn" class="btn btn-primary">Continue as NGO</a>
+                </div>
+                <div class="m-5">
+                    <img src="https://islam.ru/en/sites/default/files/img/story/2013/01/sha.jpeg" alt="">
+                </div>
+            </div>
+            <hr class="m-5">
+        </section>
+    </main>
+    <footer class="text-center">
+        <p>Copyright© Monzurul kabir</p>
+    </footer>
+</body>
+</html>

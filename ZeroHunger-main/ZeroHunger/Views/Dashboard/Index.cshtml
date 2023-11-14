@@ -1,0 +1,33 @@
+﻿@model List<ZeroHunger.Models.RequestDTO>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/DashboardLayoutNgo.cshtml";
+}
+
+
+
+@if (Model != null)
+{
+    <h3>Restaurant Data</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Restaurant Name</th>
+                <th scope="col">Request Date</th>
+                <th scope="col">Request Status</th>
+                <th scope="col">Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.restaurentName</td>
+                    <td>@item.requestDate</td>
+                    <td>@item.status</td>
+                    <td>@item.quantity</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}   
