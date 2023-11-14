@@ -22,7 +22,7 @@ namespace ZeroHunger.Controllers
                 var modelList = requests.Select(r => new RequestDTO()
                 {
                     id = r.id,
-                    restaurentName = r.retaurant_name,
+                    restaurentName = r.retaurant_name,  //fhhjghklg
                     requestDate = r.requestdate,
                     status = r.status,
                     quantity = r.quantity
